@@ -15,6 +15,9 @@ public class JnaController {
     public void test(@PathVariable final String string) {
         log.info("Printing [{}] in Native Library.", string);
         jnaApiInterface.printf(string);
+        log.info("Calculating cosh of 0.0.");
+        final double result = jnaApiInterface.cosh(0.0);
+        log.info("Result: {}", result);
     }
 
 }

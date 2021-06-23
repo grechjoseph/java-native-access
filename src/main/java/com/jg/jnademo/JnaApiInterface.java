@@ -19,4 +19,6 @@ public interface JnaApiInterface extends Library {
      */
     void printf(String format, Object... args);
 
+    double cosh(double value);
+
 }
